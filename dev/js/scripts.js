@@ -901,7 +901,7 @@ mr = (function (mr, $, window, document){
 //					     $.ajax({
 					url: "https://formspree.io/contact@deepci.org", 
 //					method: "POST",
-					dataType: "json"
+					dataType: "json",
                     type: "POST",
 //                    url: "mail/mail.php",
                     data: thisForm.serialize()+"&url="+window.location.href,
