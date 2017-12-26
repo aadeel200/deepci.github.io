@@ -901,7 +901,7 @@ mr = (function (mr, $, window, document){
                     type: "POST",
                     url: "https://formspree.io/contact@deepci.org",
 					dataType: "json",
-                    data: thisForm.serializeArray(),
+                    data:thisForm.serializeArray(),
 					//()+"&url="+window.location.href,
                     success: function(response) {
                         // Swiftmailer always sends back a number representing number of emails sent.
@@ -924,13 +924,11 @@ mr = (function (mr, $, window, document){
                         }
                         // If error text was returned, put the text in the .form-error div and show it.
                         else {
-							mr.forms.resetForm(thisForm);
-                            mr.forms.showFormSuccess(formSuccess, formError, 1000, 5000, 500);
                             // Keep the current error text in a data attribute on the form
-//                            formError.attr('original-error', formError.text());
-//                            // Show the error with the returned error text.
-//                            formError.text(response).stop(true).fadeIn(1000);
-//                            formSuccess.stop(true).fadeOut(1000);
+                            formError.attr('original-error', formError.text());
+                            // Show the error with the returned error text.
+                            formError.text(response).stop(true).fadeIn(1000);
+                            formSuccess.stop(true).fadeOut(1000);
                         }
                     },
                     error: function(errorObject, errorText, errorHTTP) {
