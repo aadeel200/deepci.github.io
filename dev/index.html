@@ -46,11 +46,11 @@
 							  <div class="dropdown__container">
 								<div class="container">
 								  <div class="row">
-									<div class="dropdown__content col-md-3">
+									<div class="dropdown__content col-md-4">
 									  <div class="row">
 										<ul class="menu-vertical">
-										  <li> <a class="inner-link" href="courses.html#begineer">Beginners/Intermediate</a> </li>
-										  <li> <a class="inner-link" href="courses.html#advanced">Advanced and application specific</a> </li>
+										  <li style="font-size: 1.0em;"> <a class="inner-link" href="courses.html#begineer">Beginners/Intermediate</a> </li>
+										  <li style="font-size: 1.0em;"> <a class="inner-link" href="courses.html#advanced">Advanced and application specific</a> </li>
 
 										</ul>
 									  </div>
@@ -89,7 +89,7 @@
                             <h3>
                                Bringing the Power of Deep Computational Intelligence to Everyone
                             </h3>
-							<a class="btn btn--primary type--uppercase inner-link" href="#" target="_self"> <span class="btn__text">
+							<a class="btn btn--primary type--uppercase inner-link" href="#about" target="_self"> <span class="btn__text">
                                 LEARN MORE</span> </a>
 <!--
                             <span class="block type--fine-print">or
@@ -244,7 +244,7 @@
                     <div class="row">
                         <div class="col-sm-10 col-md-10">
                             <h2><br><b>Why DeepCI?</b></h2>
-                            <p class="lead" align="justify">
+                            <p class="lead pjustify">
 							We are the world’s first not-for-profit organization launched by internationally recognized Big Data Scientists, aiming to fill this gap through unique provision of a <b>range of cost-effective solutions, hands-on training courses</b> and <b>innovative Big Data consultancy.</b>
 							<br><br>
 							DeepCI envision exploiting the full potential of deep Big Data solutions in cutting-edge industry areas, ranging from education, culture and heritage, early dementia and cancer diagnosis, to smart cities, journalism, media, policy making and smart governance, and many more. We are passionate to provide an optimum, customised Big Data-driven solution to maximise your business productivity and potential - in ground-breaking ways!
@@ -260,7 +260,7 @@
                     <div class="row">
                         <div class="col-sm-10 col-md-12">
                             <h2><b>DeepCI Big Data Solutions</b></h2>
-                            <p class="lead"><i>A non-exhaustive list of potential Big Data applications is given below (but not limited to). </i></p>
+                            <p class="lead"><i>A non-exhaustive list of potential Big Data applications is given below (but not limited to) </i></p>
                         </div>
                     </div>
                 </div>
@@ -373,8 +373,8 @@
 			<section id="contact" class="switchable">
                 <div class="container">
                     <div class="row">
+						<h2 class="text-center"><b>Contact Us</b></h2>
                         <div class="col-sm-5">
-
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2234.4491561490095!2d-3.177741184062127!3d55.941586680604274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4887b87f8f9f1597%3A0x47518bc4a22b018a!2s20%2F1+Parkside+Terrace%2C+Edinburgh+EH16+5XW!5e0!3m2!1sen!2suk!4v1514247598683" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                         </div>
                         <div class="col-sm-6 col-xs-12">
@@ -385,9 +385,10 @@
                                 <p class="lead"> We are open from 9am — 5pm week days. </p>
                             </div>
                             <div class="row">
-                                <form class="form-email" data-success="Thanks for your enquiry, we'll be in touch shortly." data-error="Please fill in all fields correctly.">
+                                <form action="https://formspree.io/contact@deepci.org"
+      method="POST" data-success="Thanks for your enquiry, we'll be in touch shortly." data-error="Please fill in all fields correctly.">
                                     <div class="col-sm-6 col-xs-12"> <label>Your Name:</label> <input type="text" name="Name" class="validate-required"> </div>
-                                    <div class="col-sm-6 col-xs-12"> <label>Email Address:</label> <input type="email" name="Email" class="validate-required validate-email"> </div>
+                                    <div class="col-sm-6 col-xs-12"> <label>Email Address:</label> <input type="email" name="_replyto" class="validate-required validate-email"> </div>
                                     <div class="col-sm-12 col-xs-12"> <label>Message:</label> <textarea rows="3" name="Message" class="validate-required"></textarea> </div>
                                     <div class="col-sm-5 col-md-4 col-xs-6"> <button type="submit" class="btn btn--primary type--uppercase">Send Enquiry</button> </div>
                                 </form>
@@ -442,6 +443,7 @@
 				}
 			  });
 		</script>
+
     </body>
 
 </html>
