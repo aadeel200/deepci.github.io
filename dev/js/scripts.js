@@ -908,8 +908,20 @@ mr = (function (mr, $, window, document){
                         // If this is numeric (not Swift Mailer error text) AND greater than 0 then show success message.
 
                         submitButton.removeClass('btn--loading');
+						if (response.hasOwnProperty('success')) {
+                                // For some browsers, if empty 'successRedirect' is undefined; for others,
+                                // 'successRedirect' is false.  Check for both.
+                                successRedirect = thisForm.attr('data-success-redirect');
+                                if (typeof successRedirect !== typeof undefined && successRedirect !== false && successRedirect !== "") {
+                                    window.location = successRedirect;
+                                }
 
-                        if ($.isNumeric(response)) {
+                                mr.forms.resetForm(thisForm);
+                                mr.forms.showFormSuccess(formSuccess, formError, 1000, 5000, 500);
+ 
+                        }
+						
+                        else if ($.isNumeric(response)) {
                             if (parseInt(response,10) > 0) {
                                 // For some browsers, if empty 'successRedirect' is undefined; for others,
                                 // 'successRedirect' is false.  Check for both.
