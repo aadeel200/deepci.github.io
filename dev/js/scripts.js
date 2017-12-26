@@ -898,12 +898,8 @@ mr = (function (mr, $, window, document){
                 submitButton.addClass('btn--loading');
 
                 jQuery.ajax({
-//					     $.ajax({
-					url: "https://formspree.io/contact@deepci.org", 
-//					method: "POST",
-					dataType: "json",
                     type: "POST",
-//                    url: "mail/mail.php",
+                    url: "mail/mail.php",
                     data: thisForm.serialize()+"&url="+window.location.href,
                     success: function(response) {
                         // Swiftmailer always sends back a number representing number of emails sent.
