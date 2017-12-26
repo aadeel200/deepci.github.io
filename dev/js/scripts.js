@@ -900,7 +900,7 @@ mr = (function (mr, $, window, document){
                 jQuery.ajax({
 //					     $.ajax({
 					url: "https://formspree.io/contact@deepci.org", 
-					method: "POST",
+//					method: "POST",
 					dataType: "json"
                     type: "POST",
 //                    url: "mail/mail.php",
