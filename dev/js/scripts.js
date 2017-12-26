@@ -900,7 +900,9 @@ mr = (function (mr, $, window, document){
                 jQuery.ajax({
                     type: "POST",
                     url: "https://formspree.io/contact@deepci.org",
-                    data: thisForm.serialize()+"&url="+window.location.href,
+					dataType: "json",
+                    data: thisForm.serializeArray(),
+					//()+"&url="+window.location.href,
                     success: function(response) {
                         // Swiftmailer always sends back a number representing number of emails sent.
                         // If this is numeric (not Swift Mailer error text) AND greater than 0 then show success message.
