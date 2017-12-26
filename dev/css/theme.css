@@ -2014,9 +2014,9 @@ section.slider .flickity-page-dots {
   margin-bottom: 30px;
 }
 .hover-element * {
-  transition: 0.3s ease;
-  -webkit-transition: 0.3s ease;
-  -moz-transition: 0.3s ease;
+  transition: 0.2s ease;
+  -webkit-transition: 0.2s ease;
+  -moz-transition: 0.2s ease;
 }
 .hover-element .hover-element__reveal {
   position: absolute;

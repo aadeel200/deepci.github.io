@@ -3,6 +3,29 @@
 #blackoverlay {
 box-shadow: inset 0 0 0 1000px rgba(0,0,0,.6);
 }
+li{
+/*	color: white;*/
+	font-size: 1.16em;
+}
+@media screen and (max-width: 600px) {
+  #hideOnMobile {
+    visibility: hidden;
+    clear: both;
+    float: left;
+    margin: 10px auto 5px 20px;
+    width: 28%;
+    display: none;
+  }
+	  .lead {
+    font-size: 1.05714286em;
+    line-height: 1.68421053em;
+  }
+}
+.pjustify {
+    text-align: justify;  
+    -moz-text-align-last: left; /* Code for Firefox */
+    text-align-last: left;
+}
 .image {
     position:relative;
     width:400px;
